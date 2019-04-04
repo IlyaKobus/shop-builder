@@ -1,0 +1,179 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~icheck/skins/all.css';
+@import '~font-awesome/css/font-awesome.min.css';
+@import '~datatables/media/css/jquery.dataTables.min.css';
+@import '~jquery-ui/themes/base/all.css';
+@import '~select2/dist/css/select2.min.css';
+@import '~flag-icon-css/css/flag-icon.min.css';
+@import '~admin-lte/dist/css/AdminLTE.min.css';
+@import '~admin-lte/dist/css/skins/_all-skins.min.css';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+.option-not-allowed {
+  cursor: not-allowed !important;
+  font-weight: bold;
+}
+
+.form-group.required .control-label:before {
+  content: "*";
+  color: red;
+}
+
+th.required:before {
+  content: "*";
+  color: red;
+}
+
+.select2 {
+  width: 100% !important;
+}
+
+/* ^^ SELECTABLE ^^ */
+
+.selectable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  & .ui-selected {
+    background: #F39814;
+    color: white;
+  }
+
+  & .ui-selecting {
+    background: #FECA40;
+  }
+
+  & li {
+    margin: 3px;
+    padding: 0.4em;
+    font-size: 1em;
+    cursor: default;
+  }
+
+  & span {
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+}
+
+/* ^^^^^^^^^^^^^^^^^ */
+
+.breadcrumb {
+  position: static !important;
+}
+
+.iCheck-helper {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  display: block;
+  width: 140%;
+  height: 140%;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  border: 0;
+  opacity: 0;
+}
+
+.icheckbox_square-blue {
+  position: relative !important;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.table.option-value-table {
+  & tbody tr:nth-child(even) {
+    background: #e6e3e3;
+  }
+}
+
+.option-block {
+  display: none;
+}
+
+.image-block {
+  position: relative;
+  width: 350px;
+
+  .image-block__btn-remove {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  .image-block__btn-edit {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  input[type=file] {
+    display: none;
+  }
+
+  .image-block__img {
+    @extend %img-block;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+table.dataTable {
+  & tbody tr:nth-child(even) {
+    background: #b9e5ff;
+  }
+
+  & tbody tr:nth-child(odd) {
+    background: #eee;
+  }
+}
+
+.layout-table-container {
+  border: 2px solid #dedede;
+}
+
+.order-products-table td {
+  border: 1px solid #f4f4f4;
+}
+
+.order-addresses-table, .order-events-table {
+  margin-bottom: 50px !important;
+}
+
+table.text-right th {
+  text-align: right;
+}
+
+/* extensions */
+
+%img-block {
+  width: 240px;
+  cursor: pointer;
+}
+
+/* ^^^^^^^^^^ */
+
+
+
+
+
