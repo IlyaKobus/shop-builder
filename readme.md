@@ -1,12 +1,12 @@
 # Larashop
 
-Larashop is a Laravel constructor for e-commerce projects.  
+Larashop is a Laravel constructor for e-commerce projects  
 
 ## Installation
 ### Using Docker
 Clone project from GIT:
 ```sh
-git clone git@bitbucket.org:devlemonteam/larashop.git
+git clone https://github.com/IlyaKobus/shop-builder.git
 ```
 
 Install docker and docker-compose to your system (for Ubuntu: https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=94798094)
@@ -21,7 +21,7 @@ Clone .`env.example` as `.env`
 cp ./env.example ./.env
 ```
 
-If everything done OK, you can go to [http://localhost:8888][url-docker] and see project`s homepage.
+If everything went OK, you can go to [http://localhost:8888][url-docker] and see project`s homepage.
 
 ### Using OpenServer
 Install OpenServer.
@@ -61,7 +61,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-If everything done OK, you can go to [http://larashop.local][url-os] and should see project`s homepage.
+If everything went OK, you can go to [http://larashop.local][url-os] and should see project`s homepage.
 
 ## Credentials to Admin panel:
 username: `admin`
@@ -76,4 +76,4 @@ password: `admin`
 
 2. Create new dir in `App\Modules\Extension\Resources\views\dashboard\extension\instances` with your extension name.
 
-3. Create 2 files: `options.blade.php` and `show.blade.php`. The first one is for rendering options block on the module edit page and the second is for front-end extension representation.
+3. Create 2 files: `options.blade.php` and `show.blade.php`. The first one is for rendering options block at the module edit page and the second is for front-end extension representation.
